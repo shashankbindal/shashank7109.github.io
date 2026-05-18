@@ -35,9 +35,16 @@ export default function ContactSection() {
     {
       label: 'Code',
       title: 'GitHub',
-      subtitle: '/shashank7109',
-      href: 'https://github.com/shashank7109',
+      subtitle: '/shashankbindal',
+      href: 'https://github.com/shashankbindal',
       delay: 'delay-300',
+    },
+    {
+      label: 'Twitter / X',
+      title: '@isshshank',
+      subtitle: 'Thoughts & builds',
+      href: 'https://twitter.com/isshshank',
+      delay: 'delay-350',
     },
     {
       label: 'Email',

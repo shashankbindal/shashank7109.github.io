@@ -191,9 +191,9 @@ export default function HeroSection() {
               className={`max-w-md font-body text-sm md:text-base leading-relaxed transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ color: 'var(--fg-muted)', transitionDelay: '0.5s', lineHeight: '1.75' }}
             >
-              Building across web, mobile &amp;{' '}
-              <span style={{ color: 'var(--accent)' }}>AI/ML</span>
-              {' '}— from production RAG pipelines to cross-platform apps. Startup collaborator. Open source contributor.
+              Full-stack &amp; AI engineer shipping RAG pipelines, voice AI, and{' '}
+              <span style={{ color: 'var(--accent)' }}>open-source</span>
+              {' '}tools. SWE intern @ QuizerAI · PyPI author · B.Tech IT @ RGIPT Amethi.
             </p>
 
             {/* CTA row */}
@@ -202,7 +202,7 @@ export default function HeroSection() {
               style={{ transitionDelay: '0.62s' }}
             >
               <a
-                href="https://github.com/shashank7109"
+                href="https://github.com/shashankbindal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 cursor-none"
@@ -210,6 +210,18 @@ export default function HeroSection() {
               >
                 <span className="text-[10px] font-display font-600 uppercase tracking-[0.18em] transition-colors duration-300" style={{ color: 'var(--fg-muted)' }}>
                   GitHub
+                </span>
+                <div className="h-[1px] w-6 transition-all duration-500 group-hover:w-12" style={{ background: 'var(--fg-muted)' }} />
+              </a>
+              <a
+                href="https://twitter.com/isshshank"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 cursor-none"
+                data-cursor
+              >
+                <span className="text-[10px] font-display font-600 uppercase tracking-[0.18em] transition-colors duration-300" style={{ color: 'var(--fg-muted)' }}>
+                  Twitter
                 </span>
                 <div className="h-[1px] w-6 transition-all duration-500 group-hover:w-12" style={{ background: 'var(--fg-muted)' }} />
               </a>

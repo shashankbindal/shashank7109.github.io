@@ -25,7 +25,16 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/shashank7109"
+            href="https://twitter.com/isshshank"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] font-display font-500 uppercase tracking-[0.08em] hover:opacity-80 transition-opacity duration-300"
+            style={{ color: 'var(--fg-subtle)' }}
+          >
+            Twitter
+          </a>
+          <a
+            href="https://github.com/shashankbindal"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[11px] font-display font-500 uppercase tracking-[0.08em] hover:opacity-80 transition-opacity duration-300"

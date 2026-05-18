@@ -46,38 +46,16 @@ const workExperience: WorkExperience[] = [
     projectUrl: 'https://quizerai.com',
     stack: ['Next.js', 'FastAPI', 'AWS Bedrock', 'AWS Lambda', 'DynamoDB', 'LangChain', 'Redis', 'Docker', 'JWT'],
     metrics: [
-      { value: '5K+', label: 'Concurrent Users' },
+      { value: '500+', label: 'Concurrent Users' },
       { value: '40%', label: 'Lower Latency' },
       { value: '60%', label: 'Faster API' },
       { value: '90%', label: 'Fewer Env Bugs' },
     ],
     bullets: [
-      'Architected a multi-tenant RBAC engine supporting Student, Teacher, and Admin roles with backend-authoritative subscription gating (Free/Go/Pro) across 3 privilege tiers.',
-      'Designed and shipped a production RAG pipeline using LangChain and AWS Bedrock with vector-indexed knowledge base, orchestrated via multi-instance Lambda, scaling to 5,000+ concurrent users at 40% lower inference latency.',
-      'Executed a MySQL → DynamoDB migration with automated table provisioning improving API response by 60%, and containerized microservices via Docker cutting environment bugs by 90%.',
-      'Built role-scoped Recharts analytics dashboards and integrated Google OAuth 2.0 with JWT-based session management and RBAC permission propagation.',
-    ],
-  },
-  {
-    id: 2,
-    index: '02',
-    role: 'QuizerAI Partner — Platform Integration',
-    company: 'ISKCON · gitaforyouth.com',
-    period: 'Jan 2025 – Present',
-    location: 'Remote',
-    projectName: 'Bhagavad Gita Certification Platform',
-    projectUrl: 'https://gitaforyouth.com',
-    stack: ['Next.js', 'FastAPI', 'AWS Bedrock', 'AWS Lambda', 'MongoDB', 'LangChain', 'Redis', 'Recharts'],
-    metrics: [
-      { value: '18', label: 'Chapters Processed' },
-      { value: '95%+', label: 'Parse Accuracy' },
-      { value: '35%', label: 'Token Cost Cut' },
-      { value: '70%', label: 'LLM Cache Hits' },
-    ],
-    bullets: [
-      'Launched a full-stack certification platform with chapter-gated quiz progression and an AWS Lambda-orchestrated PDF ingestion pipeline processing 18 chapters at 95%+ parse accuracy into MongoDB.',
-      'Designed an ontology-driven NLP purport classifier with token-optimized semantic chunking, cutting AWS Bedrock token costs by 35%.',
-      'Implemented a Redis TTL cache layer reducing redundant LLM inference calls by 70% and delivered Recharts dashboards tracking certification conversion and cohort engagement.',
+      'Architected a multi-tenant RBAC engine (Student, Teacher, Admin) with subscription gating (Free, Go, Pro), enforcing quota controls and assignment lifecycle management.',
+      'Designed and deployed a RAG pipeline using LangChain and AWS Bedrock with vector-indexed retrieval on serverless Lambda nodes, scaling to 500+ concurrent users at 40% lower inference latency.',
+      'Executed MySQL → DynamoDB migration improving API response time by 60%; containerized services via Docker reducing environment bugs by 90% across dev, staging, and production.',
+      'Integrated OAuth 2.0 and JWT authentication; built Recharts dashboards for real-time quiz analytics, subscription KPIs, and engagement tracking.',
     ],
   },
 ];
@@ -86,6 +64,62 @@ const projects: Project[] = [
   {
     id: 1,
     index: '01',
+    title: 'quelltest',
+    subtitle: 'Open-Source Python CLI · PyPI · 11K+ Downloads',
+    url: 'https://pypi.org/project/quelltest/',
+    period: '2025 – Present',
+    stack: ['Python', 'AST', 'libcst', 'LangChain', 'Typer', 'pytest', 'PyPI'],
+    displayUrl: 'pypi.org/project/quelltest',
+    gradient: 'linear-gradient(135deg, #080808 0%, #0d0d0d 40%, #111111 100%)',
+    patternColor: 'rgba(200,255,0,0.05)',
+    image: '/assets/images/logo.png',
+    logoBg: 'var(--bg-secondary)',
+    bullets: [
+      'Built and shipped an open-source Python CLI on PyPI that reads production code via Abstract Syntax Tree (AST), detects untested guard clauses (boundary, null, enum, auth checks), and generates verified failing tests with no LLM API key required.',
+      'Engineered a two-phase verification engine: tests must fail on current code (proves gap is real) and pass after fix (proves fix works); 11K+ total downloads, 6.2K last week across 16 releases with zero paid distribution.',
+      'Offline rule-based synthesis covering 8 constraint types; optional LLM fix suggestions via Anthropic, OpenAI, or Ollama; CI mode with threshold scoring and GitHub Pull Request analysis.',
+    ],
+  },
+  {
+    id: 2,
+    index: '02',
+    title: 'Lekha',
+    subtitle: 'AI Meeting Transcription, Minutes & Voice Cloning',
+    url: 'https://lekha.shashankbindal.me',
+    period: '2025 – Present',
+    stack: ['Python', 'FastAPI', 'Next.js', 'NLP', 'STT', 'Voice Cloning', 'LangChain'],
+    displayUrl: 'lekha.shashankbindal.me',
+    gradient: 'linear-gradient(135deg, #05050f 0%, #080818 40%, #0a0a22 70%, #06061a 100%)',
+    patternColor: 'rgba(120,100,255,0.06)',
+    image: '/assets/images/logo.png',
+    logoBg: 'var(--bg-secondary)',
+    bullets: [
+      'AI platform that captures meeting audio, converts it to searchable transcripts, auto-generates structured meeting minutes, and clones speaker voices for replay.',
+      'Designed end-to-end speech-to-text pipeline with NLP post-processing for speaker diarisation, action-item extraction, and summary generation.',
+    ],
+  },
+  {
+    id: 3,
+    index: '03',
+    title: 'Bhagavad Gita Platform',
+    subtitle: 'AI Certification Platform · ISKCON · gitaforyouth.com',
+    url: 'https://gitaforyouth.com',
+    period: 'Jan 2025 – Present',
+    stack: ['Next.js', 'FastAPI', 'AWS Bedrock', 'AWS Lambda', 'MongoDB', 'LangChain', 'Redis', 'Recharts'],
+    displayUrl: 'gitaforyouth.com',
+    gradient: 'linear-gradient(135deg, #0d0800 0%, #1a1000 40%, #241600 70%, #1a0e00 100%)',
+    patternColor: 'rgba(255,180,0,0.05)',
+    image: '/assets/images/logo.png',
+    logoBg: 'var(--bg-secondary)',
+    bullets: [
+      'Launched a full-stack certification platform with chapter-gated quiz progression and an AWS Lambda-orchestrated PDF ingestion pipeline processing 18 chapters at 95%+ parse accuracy into MongoDB.',
+      'Designed an ontology-driven NLP purport classifier with token-optimized semantic chunking, cutting AWS Bedrock token costs by 35%.',
+      'Implemented a Redis TTL cache layer reducing redundant LLM inference calls by 70% and delivered Recharts dashboards tracking certification conversion and cohort engagement.',
+    ],
+  },
+  {
+    id: 4,
+    index: '04',
     title: 'AlertyAI',
     subtitle: 'Cross-Platform AI Task & Voice Scheduler',
     url: 'https://alertyai.com',
@@ -94,18 +128,18 @@ const projects: Project[] = [
     displayUrl: 'alertyai.com',
     gradient: 'linear-gradient(135deg, #0a0a0a 0%, #0f1a0a 40%, #1a2d0a 70%, #0d1f05 100%)',
     patternColor: 'rgba(200,255,0,0.07)',
-    image: '/assets/images/alertyAI_logo.png',
+    image: '/assets/images/alertyAi_logo.png',
     logoBg: '#ffffff',
     bullets: [
-      'Engineered a cross-platform AI productivity app with Flutter/Kotlin Android client and Next.js web frontend, achieving 60% reduction in task-creation friction.',
-      'Integrated Sarvam AI STT/TTS for a voice-to-task pipeline with sub-2s processing latency, applying NLP subtask decomposition cutting manual planning overhead by 50%.',
+      'Engineered a cross-platform AI productivity app with Flutter/Kotlin Android client and Next.js web frontend; sub-2-second voice-to-task conversion using Sarvam AI STT/TTS.',
+      'Designed NLP-based task decomposition and automated reminder engine reducing planning overhead by 50% and task creation friction by 60%.',
     ],
   },
   {
-    id: 2,
-    index: '02',
+    id: 5,
+    index: '05',
     title: 'IEEE RGIPT',
-    subtitle: 'Official Student Chapter Website',
+    subtitle: 'Official Student Chapter Platform',
     url: 'https://ieeergipt.in',
     period: 'Aug 2025 – Present',
     stack: ['Next.js', 'Three.js', 'Express.js', 'MongoDB', 'SendGrid', 'Canvas API', 'JWT'],
@@ -115,7 +149,7 @@ const projects: Project[] = [
     image: '/assets/images/logo.png',
     logoBg: 'var(--bg-secondary)',
     bullets: [
-      'Deployed the official RGIPT IEEE chapter platform with event registration workflows, a secure admin CMS, a Canvas API dynamic ID card generator, and a SendGrid email pipeline serving 980+ members.',
+      'Deployed the official RGIPT IEEE chapter platform with event registration, admin CMS, Canvas API dynamic ID card generation, and SendGrid email pipeline; 90 confirmed registrations, 1,000+ total visitors.',
     ],
   },
 ];
@@ -734,7 +768,7 @@ export default function ProjectsSection() {
             </div>
 
             <a
-              href="https://github.com/shashank7109"
+              href="https://github.com/shashankbindal"
               target="_blank"
               rel="noopener noreferrer"
               className="reveal-up delay-200 group flex items-center gap-3 cursor-none self-start sm:self-end"

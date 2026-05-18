@@ -118,8 +118,8 @@ export const metadata: Metadata = {
   // ── Twitter Card ──────────────────────────────────────────────────────────
   twitter: {
     card: 'summary_large_image',
-    site: '@shashankbindal07',
-    creator: '@shashankbindal07',
+    site: '@isshshank',
+    creator: '@isshshank',
     title: 'Shashank Bindal | Full-Stack & AI Engineer',
     description:
       'Full-Stack & AI/ML Engineer building web, mobile, and AI products. ' +
@@ -226,8 +226,9 @@ export default function RootLayout({
                 // ── Social / authoritative profiles (sameAs) ──────────────────
                 sameAs: [
                   'https://linkedin.com/in/shashankbindal07',
-                  'https://github.com/shashank7109',
-                  'https://twitter.com/shashankbindal07',
+                  'https://github.com/shashankbindal',
+                  'https://twitter.com/isshshank',
+                  'https://pypi.org/user/shashankbindal/',
                   process.env.NEXT_PUBLIC_SITE_URL || 'https://shashankbindal.me',
                 ],
                 // ── Location / Geo ─────────────────────────────────────────────

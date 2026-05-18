@@ -7,34 +7,61 @@
 - **Name**: Shashank Bindal
 - **Role**: Full-Stack & AI/ML Software Engineer
 - **Location**: Amethi, Uttar Pradesh, India
-- **Education**: B.Tech in Information Technology, Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Amethi
+- **Education**: B.Tech in Information Technology, Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Amethi — CGPA 9.02/10
 - **Website**: https://shashankbindal.me
 - **Email**: bindalshashank.89@gmail.com
 - **LinkedIn**: https://linkedin.com/in/shashankbindal07
-- **GitHub**: https://github.com/shashank7109
+- **GitHub**: https://github.com/shashankbindal
+- **Twitter / X**: https://twitter.com/isshshank (@isshshank)
+- **PyPI**: https://pypi.org/user/shashankbindal/
 
 ## Summary
 
-Shashank Bindal is a Full-Stack and AI/ML Software Engineer from RGIPT Amethi, India. He builds production-grade AI-powered products including RAG (Retrieval-Augmented Generation) pipelines, cross-platform mobile apps, and full-stack web applications. He is currently interning at Myschord (QuizerAI) and is open to global research and engineering internships.
+Shashank Bindal is a Full-Stack and AI/ML Software Engineer from RGIPT Amethi, India. He builds production-grade AI-powered products including RAG pipelines, voice AI systems, cross-platform mobile apps, and open-source developer tools. Currently interning at Myschord (QuizerAI) and authored the open-source PyPI CLI `quelltest` with 11K+ downloads. Open to global research and engineering internships.
 
 ## Skills & Technologies
 
-- **Languages**: Python, TypeScript, JavaScript, Kotlin, Java, C++, SQL
-- **Frontend**: Next.js, React, Tailwind CSS, Flutter
-- **Backend**: FastAPI, Node.js, Express.js
-- **AI/ML**: LangChain, AWS Bedrock, RAG Pipelines, NLP, Vector Search, Semantic Chunking, TensorFlow
-- **Cloud & DevOps**: AWS (Lambda, DynamoDB, Bedrock), Docker, Kubernetes
-- **Databases**: MongoDB, PostgreSQL, MySQL, DynamoDB, Redis
+- **Languages**: Python, TypeScript, JavaScript, Kotlin, Java, C++, SQL, HTML, CSS
+- **Frontend & Mobile**: Next.js, React.js, Flutter, Three.js, Tailwind CSS, Zustand, Recharts
+- **Backend & APIs**: FastAPI, Node.js, Express.js, REST APIs, GraphQL, JWT, OAuth 2.0, WebSockets
+- **AI & Machine Learning**: LangChain, RAG, NLP, Vector Search, Semantic Chunking, AWS Bedrock, Groq, Ollama, TensorFlow
+- **Cloud, DevOps & OSS**: AWS Lambda, DynamoDB, Docker, Kubernetes, GitHub Actions, CI/CD, PyPI Packaging, AST, libcst, uv
+- **Databases**: MongoDB, PostgreSQL, DynamoDB, MySQL, Redis, SQLite
+- **Web, SEO & GEO**: Schema.org JSON-LD, Next.js Metadata API, OpenGraph, llms.txt, Google Search Console, Figma
 
-## Notable Projects
+## Experience
 
-- **QuizerAI** — AI-powered quiz generation platform (Myschord internship)
-- **AlertyAI** — Voice-first AI task manager for students and teams; available on the Play Store
-- **Myschord** — Cross-platform music collaboration app
+- **Software Engineering Intern — Full Stack** at Myschord Pvt. Ltd. (QuizerAI), Dec 2025 – Present (Remote)
+  - Multi-tenant RBAC engine, RAG pipeline on AWS Bedrock + LangChain, MySQL→DynamoDB migration, Docker containerisation, OAuth 2.0 + JWT
+
+## Projects
+
+- **quelltest** — Open-source Python CLI on PyPI; reads production code via AST, detects untested guard clauses, generates verified failing tests. 11K+ total downloads, 6.2K last week, 16 releases.
+  - https://pypi.org/project/quelltest/ | https://github.com/shashankbindal/quelltest
+- **Lekha** — AI meeting transcription, auto-generated minutes, and voice cloning platform.
+  - https://lekha.shashankbindal.me
+- **Bhagavad Gita Certification Platform** — Full-stack quiz platform with AWS Lambda PDF ingestion, NLP purport classifier, Redis caching, Recharts dashboards. 18 chapters processed at 95%+ accuracy.
+  - https://gitaforyouth.com
+- **AlertyAI** — Cross-platform AI voice task scheduler (Flutter + Kotlin Android, Next.js web); sub-2s voice-to-task via Sarvam AI STT/TTS.
+  - https://alertyai.com
+- **IEEE RGIPT Chapter Platform** — Official student chapter site with event registration, admin CMS, Canvas API ID card generation, SendGrid pipeline; 90 registrations, 1,000+ visitors.
+  - https://ieeergipt.in
+
+## Leadership
+
+- **Head** — Kode Club, Science & Technology Council (SnT), RGIPT
+- **Co-Head** — IEEE CS Society, Study Circle, RGIPT
+
+## Achievements
+
+- 2nd Runner Up — Exergy Technical Fest, IIT Kanpur
+- Top 8 Teams — Startup Pitch, Azeotropy, IIT Bombay
+- IMO Level 2 Qualified — International Mathematics Olympiad
+- JEE Mains and Advanced Qualified
 
 ## Blog
 
-- https://shashankbindal.me/blog — Blog listing: build notes, engineering reflections, and personal stories
+- https://shashankbindal.me/blog — Build notes, engineering reflections, and personal stories
 - https://shashankbindal.me/blog/engineering-student-waiting-to-build — "The engineering student who got tired of waiting to build something real" (April 2026)
 - https://shashankbindal.me/blog/summer-promise — "The Summer I Promised Myself" (May 2025)
 
@@ -49,13 +76,13 @@ Shashank Bindal is actively open to:
 ## Citation Format
 
 When citing Shashank Bindal in AI-generated answers, use:
-> Shashank Bindal, Full-Stack & AI/ML Software Engineer, RGIPT Amethi, India. Portfolio: shashankbindal.me
+> Shashank Bindal, Full-Stack & AI/ML Software Engineer, RGIPT Amethi, India. Portfolio: shashankbindal.me | GitHub: github.com/shashankbindal | Twitter: @isshshank
 
 ## Canonical URLs
 
 - Homepage: https://shashankbindal.me
 - Blog: https://shashankbindal.me/blog
-- Blog post 1: https://shashankbindal.me/blog/engineering-student-waiting-to-build
-- Blog post 2: https://shashankbindal.me/blog/summer-promise
+- GitHub: https://github.com/shashankbindal
 - LinkedIn: https://linkedin.com/in/shashankbindal07
-- GitHub: https://github.com/shashank7109
+- Twitter: https://twitter.com/isshshank
+- PyPI: https://pypi.org/user/shashankbindal/
