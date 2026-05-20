@@ -1,4 +1,4 @@
-# Professional Portfolio — Shashank Bindal
+Portfolio — Shashank Bindal
 
 A high-performance, aesthetically driven portfolio built with Next.js, Tailwind CSS, and Framer Motion.
 
