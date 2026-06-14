@@ -31,6 +31,12 @@ Shashank Bindal is a Full-Stack and AI/ML Software Engineer from RGIPT Amethi, I
 
 ## Experience
 
+- **Research Intern** at IIT (BHU) Varanasi, May 2026 – Present (Hybrid)
+  - Deep Learning, Computer Vision, Python, PyTorch, NLP research
+- **Summer Research Intern** at NIT Kurukshetra (Training & Placement Cell), May 2026 – Present (Hybrid)
+  - Deep Learning, Project Management, Data Analysis
+- **Building — Founder** at Quelltest (Self-employed), Apr 2026 – Present (Remote)
+  - Open-source Python CLI on PyPI; 11K+ downloads, 6.2K/week
 - **Software Engineering Intern — Full Stack** at Myschord Pvt. Ltd. (QuizerAI), Dec 2025 – Present (Remote)
   - Multi-tenant RBAC engine, RAG pipeline on AWS Bedrock + LangChain, MySQL→DynamoDB migration, Docker containerisation, OAuth 2.0 + JWT
 
