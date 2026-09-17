@@ -60,6 +60,7 @@ Shashank Bindal is a Full-Stack and AI/ML Software Engineer from RGIPT Amethi, I
 
 ## Achievements
 
+- Flipkart Grid 6.0 Semifinalist — advanced to the semifinal round of Flipkart's national-level technology competition
 - 2nd Runner Up — Exergy Technical Fest, IIT Kanpur
 - Top 8 Teams — Startup Pitch, Azeotropy, IIT Bombay
 - IMO Level 2 Qualified — International Mathematics Olympiad

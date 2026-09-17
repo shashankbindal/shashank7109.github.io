@@ -238,7 +238,7 @@ export default function HeroSection() {
                 <div className="h-[1px] w-6 transition-all duration-500 group-hover:w-12" style={{ background: 'var(--fg-muted)' }} />
               </a>
               <a
-                href="/assets/resume/Shashank_resume.pdf"
+                href="/assets/resume/Shashank_resume_new.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 cursor-none"

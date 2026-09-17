@@ -272,7 +272,7 @@ export default function AboutSection() {
               {/* Resume Download */}
               <div className="reveal-up pt-2">
                 <a
-                  href="/assets/resume/Shashank_resume.pdf"
+                  href="/assets/resume/Shashank_resume_new.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 cursor-none"

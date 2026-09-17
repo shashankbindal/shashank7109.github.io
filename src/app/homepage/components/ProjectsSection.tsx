@@ -29,9 +29,18 @@ interface Project {
   stack: string[];
   gradient: string;
   patternColor: string;
-  image: string;
+  image?: string;
+  monogram?: string;
   logoBg: string;
   bullets: string[];
+}
+
+interface Achievement {
+  id: number;
+  index: string;
+  title: string;
+  detail: string;
+  category: string;
 }
 
 const workExperience: WorkExperience[] = [
@@ -88,14 +97,14 @@ const workExperience: WorkExperience[] = [
     projectUrl: 'https://quelltest.com',
     stack: ['Python', 'AST', 'libcst', 'LangChain', 'Typer', 'pytest', 'PyPI', 'CI/CD'],
     metrics: [
-      { value: '11K+', label: 'Total Downloads' },
-      { value: '6.2K', label: 'Downloads / Week' },
+      { value: '17K+', label: 'Total Downloads' },
       { value: '16', label: 'Releases' },
-      { value: '0', label: 'Paid Distribution' },
+      { value: '8', label: 'Constraint Types' },
+      { value: '5', label: 'Quality Gates' },
     ],
     bullets: [
       'Built and shipped an open-source Python CLI on PyPI that reads production code via AST, detects untested guard clauses, and generates verified failing tests — no LLM API key required.',
-      'Engineered a two-phase verification engine (fail → fix cycle); 11K+ total downloads and 6.2K last-week downloads across 16 releases with zero paid distribution.',
+      'Engineered a five-gate verification pipeline and shipped 16 releases, reaching 17K+ downloads without paid distribution.',
       'Offline rule-based synthesis for 8 constraint types; optional LLM fix suggestions via Anthropic, OpenAI, or Ollama; CI threshold scoring and GitHub PR analysis mode.',
     ],
   },
@@ -128,93 +137,148 @@ const projects: Project[] = [
   {
     id: 1,
     index: '01',
-    title: 'quelltest',
-    subtitle: 'Open-Source Python CLI · PyPI · 11K+ Downloads',
+    title: 'QuellTest',
+    subtitle: 'Open-Source Python Testing CLI · 17K+ Downloads',
     url: 'https://quelltest.com',
-    period: '2025 – Present',
-    stack: ['Python', 'AST', 'libcst', 'LangChain', 'Typer', 'pytest', 'PyPI'],
+    period: '2026 – Present',
+    stack: ['Python', 'AST', 'libcst', 'Typer', 'pytest', 'FastAPI', 'MCP', 'OAuth'],
     displayUrl: 'quelltest.com',
     gradient: 'linear-gradient(135deg, #080808 0%, #0d0d0d 40%, #111111 100%)',
     patternColor: 'rgba(200,255,0,0.05)',
     image: '/assets/images/quelltest_logo.png',
     logoBg: 'var(--bg-secondary)',
     bullets: [
-      'Built and shipped an open-source Python CLI on PyPI that reads production code via Abstract Syntax Tree (AST), detects untested guard clauses (boundary, null, enum, auth checks), and generates verified failing tests with no LLM API key required.',
-      'Engineered a two-phase verification engine: tests must fail on current code (proves gap is real) and pass after fix (proves fix works); 11K+ total downloads, 6.2K last week across 16 releases with zero paid distribution.',
-      'Offline rule-based synthesis covering 8 constraint types; optional LLM fix suggestions via Anthropic, OpenAI, or Ollama; CI mode with threshold scoring and GitHub Pull Request analysis.',
+      'Built an AST-driven Python testing CLI with 17K+ downloads that detects untested edge cases and validates generated tests through five quality gates.',
+      'Shipped Production Readiness scoring, CI enforcement, cloud sync, a Next.js dashboard, and an OAuth PKCE MCP connector exposing eight tools.',
     ],
   },
   {
     id: 2,
     index: '02',
-    title: 'Lekha',
-    subtitle: 'AI Meeting Transcription, Minutes & Voice Cloning',
-    url: 'https://lekha.shashankbindal.me',
-    period: '2025 – Present',
-    stack: ['Python', 'FastAPI', 'Next.js', 'NLP', 'STT', 'Voice Cloning', 'LangChain'],
-    displayUrl: 'lekha.shashankbindal.me',
-    gradient: 'linear-gradient(135deg, #05050f 0%, #080818 40%, #0a0a22 70%, #06061a 100%)',
-    patternColor: 'rgba(120,100,255,0.06)',
-    image: '/assets/images/lekha_logo.png',
-    logoBg: 'var(--bg-secondary)',
+    title: 'Nexus / Vault',
+    subtitle: 'Gamified Council Platform · Full-Stack Systems',
+    url: 'https://github.com/shashankbindal/nexus_frontend',
+    period: '2026 – Present',
+    stack: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'OAuth', 'Pytest'],
+    displayUrl: 'github.com/shashankbindal/nexus_frontend',
+    gradient: 'linear-gradient(135deg, #05090d 0%, #07131b 45%, #0b202a 100%)',
+    patternColor: 'rgba(80,210,255,0.08)',
+    monogram: 'V',
+    logoBg: '#07131b',
     bullets: [
-      'AI platform that captures meeting audio, converts it to searchable transcripts, auto-generates structured meeting minutes, and clones speaker voices for replay.',
-      'Designed end-to-end speech-to-text pipeline with NLP post-processing for speaker diarisation, action-item extraction, and summary generation.',
+      'Built a React/TypeScript and FastAPI/PostgreSQL platform spanning events, clubs, quests, rewards, rotating QR check-ins, certificates, appeals, and analytics.',
+      'Implemented domain-restricted OAuth with PKCE, offline scan replay, integrity auditing, 22 end-to-end tests, and an isolated Locust load-test harness.',
     ],
   },
   {
     id: 3,
     index: '03',
-    title: 'Bhagavad Gita Platform',
-    subtitle: 'AI Certification Platform · ISKCON · gitaforyouth.com',
-    url: 'https://gitaforyouth.com',
-    period: 'Jan 2025 – Present',
-    stack: ['Next.js', 'FastAPI', 'AWS Bedrock', 'AWS Lambda', 'MongoDB', 'LangChain', 'Redis', 'Recharts'],
-    displayUrl: 'gitaforyouth.com',
-    gradient: 'linear-gradient(135deg, #0d0800 0%, #1a1000 40%, #241600 70%, #1a0e00 100%)',
-    patternColor: 'rgba(255,180,0,0.05)',
-    image: '/assets/images/alertyAi_logo.png',
-    logoBg: '#ffffff',
+    title: 'Assistive Vision Research',
+    subtitle: 'IIT (BHU) · Recognition-Supervised Image Restoration',
+    url: 'https://github.com/shashankbindal/iitbhu_research',
+    period: '2026',
+    stack: ['Python', 'PyTorch', 'OpenCV', 'OCR', 'ONNX', 'Computer Vision'],
+    displayUrl: 'github.com/shashankbindal/iitbhu_research',
+    gradient: 'linear-gradient(135deg, #09060f 0%, #140b1f 45%, #211034 100%)',
+    patternColor: 'rgba(180,110,255,0.08)',
+    monogram: 'CV',
+    logoBg: '#140b1f',
     bullets: [
-      'Launched a full-stack certification platform with chapter-gated quiz progression and an AWS Lambda-orchestrated PDF ingestion pipeline processing 18 chapters at 95%+ parse accuracy into MongoDB.',
-      'Designed an ontology-driven NLP purport classifier with token-optimized semantic chunking, cutting AWS Bedrock token costs by 35%.',
-      'Implemented a Redis TTL cache layer reducing redundant LLM inference calls by 70% and delivered Recharts dashboards tracking certification conversion and cohort engagement.',
+      'Trained a 0.44M-parameter image restorer that reached 0.462 OCR CER versus 0.455 for a 5.85M-parameter baseline—comparable readability with 13× fewer parameters.',
+      'Built a frozen evaluation benchmark, real-photo smoke tests, ONNX export, and a reproducible experimental record that includes diagnosed negative results.',
     ],
   },
   {
     id: 4,
     index: '04',
-    title: 'AlertyAI',
-    subtitle: 'Cross-Platform AI Task & Voice Scheduler',
-    url: 'https://alertyai.com',
-    period: 'Jan 2026 – Present',
-    stack: ['FastAPI', 'MongoDB', 'Next.js', 'Flutter', 'Kotlin', 'Sarvam AI', 'OCR'],
-    displayUrl: 'alertyai.com',
-    gradient: 'linear-gradient(135deg, #0a0a0a 0%, #0f1a0a 40%, #1a2d0a 70%, #0d1f05 100%)',
-    patternColor: 'rgba(200,255,0,0.07)',
-    image: '/assets/images/alertyAi_logo.png',
-    logoBg: '#ffffff',
+    title: 'AIChE SRC 2026',
+    subtitle: 'Production Conference & Event Platform',
+    url: 'https://viplav26.vercel.app',
+    period: '2026',
+    stack: ['React', 'Express.js', 'MongoDB', 'Cloudinary', 'PDFKit', 'JWT', 'OAuth'],
+    displayUrl: 'viplav26.vercel.app',
+    gradient: 'linear-gradient(135deg, #0b0802 0%, #161005 45%, #241a08 100%)',
+    patternColor: 'rgba(255,190,70,0.08)',
+    monogram: 'SRC',
+    logoBg: '#181106',
     bullets: [
-      'Engineered a cross-platform AI productivity app with Flutter/Kotlin Android client and Next.js web frontend; sub-2-second voice-to-task conversion using Sarvam AI STT/TTS.',
-      'Designed NLP-based task decomposition and automated reminder engine reducing planning overhead by 50% and task creation friction by 60%.',
+      'Built the full-stack AIChE India Student Regional Conference platform with attendee accounts, conference and event registration, submissions, announcements, and administration.',
+      'Implemented secure uploads, Google OAuth, rate limiting, transactional email, PDF certificates with QR verification, and CSV/Excel exports.',
     ],
   },
   {
     id: 5,
     index: '05',
-    title: 'IEEE RGIPT',
-    subtitle: 'Official Student Chapter Platform',
-    url: 'https://ieeergipt.in',
-    period: 'Aug 2025 – Present',
-    stack: ['Next.js', 'Three.js', 'Express.js', 'MongoDB', 'SendGrid', 'Canvas API', 'JWT'],
-    displayUrl: 'ieeergipt.in',
-    gradient: 'linear-gradient(135deg, #050510 0%, #070b1a 40%, #0a1030 70%, #050c22 100%)',
-    patternColor: 'rgba(80,140,255,0.06)',
-    image: '/assets/images/ieee_logo.png',
-    logoBg: 'var(--bg-secondary)',
+    title: 'AlertyAI',
+    subtitle: 'Google Play AI Productivity App',
+    url: 'https://play.google.com/store/apps/details?id=com.alertyai.app',
+    period: '2026 – Present',
+    stack: ['Kotlin', 'Jetpack Compose', 'FastAPI', 'MongoDB', 'Room', 'STT', 'OCR'],
+    displayUrl: 'Google Play · com.alertyai.app',
+    gradient: 'linear-gradient(135deg, #0a0a0a 0%, #0f1a0a 40%, #1a2d0a 70%, #0d1f05 100%)',
+    patternColor: 'rgba(200,255,0,0.07)',
+    image: '/assets/images/alertyAi_logo.png',
+    logoBg: '#ffffff',
     bullets: [
-      'Deployed the official RGIPT IEEE chapter platform with event registration, admin CMS, Canvas API dynamic ID card generation, and SendGrid email pipeline; 90 confirmed registrations, 1,000+ total visitors.',
+      'Published an Android productivity app with voice, image, and natural-language task capture, scheduling, reminders, subtasks, and team workflows.',
+      'Built the Jetpack Compose client with MVVM, Room, Hilt, Retrofit, Google Sign-In, backend sync, Sarvam voice transcription, and ML Kit OCR.',
     ],
+  },
+  {
+    id: 6,
+    index: '06',
+    title: 'RGIPT T&P Platform',
+    subtitle: 'Institutional Placement Operations System',
+    url: 'https://github.com/shashankbindal/TNP_RGIPT',
+    period: '2026 – Present',
+    stack: ['Next.js', 'TypeScript', 'Express.js', 'PostgreSQL', 'Prisma', 'Cloudflare R2', 'Argon2'],
+    displayUrl: 'github.com/shashankbindal/TNP_RGIPT',
+    gradient: 'linear-gradient(135deg, #050912 0%, #081426 45%, #0b2340 100%)',
+    patternColor: 'rgba(70,150,255,0.08)',
+    monogram: 'T&P',
+    logoBg: '#081426',
+    bullets: [
+      'Built a typed monorepo for student, recruiter, admin, and super-admin placement workflows using Next.js, Express, Prisma, and PostgreSQL.',
+      'Implemented institutional-email identity parsing, OTP authentication, HttpOnly JWT sessions, role-based permissions, S3-compatible uploads, database migrations, and API tests.',
+    ],
+  },
+];
+
+const achievements: Achievement[] = [
+  {
+    id: 1,
+    index: '01',
+    title: 'Flipkart Grid 6.0 Semifinalist',
+    detail: 'Advanced to the semifinal round of Flipkart\'s national-level technology competition.',
+    category: 'National',
+  },
+  {
+    id: 2,
+    index: '02',
+    title: '2nd Runner-Up — Exergy',
+    detail: 'Placed third at the Exergy Technical Fest hosted by IIT Kanpur.',
+    category: 'IIT Kanpur',
+  },
+  {
+    id: 3,
+    index: '03',
+    title: 'Top 8 — Startup Pitch',
+    detail: 'Finished among the top eight teams at Azeotropy, IIT Bombay.',
+    category: 'IIT Bombay',
+  },
+  {
+    id: 4,
+    index: '04',
+    title: 'IMO Level 2 Qualified',
+    detail: 'Qualified for Level 2 of the International Mathematics Olympiad.',
+    category: 'Olympiad',
+  },
+  {
+    id: 5,
+    index: '05',
+    title: 'JEE Main & Advanced Qualified',
+    detail: 'Qualified both stages of India\'s national engineering entrance examination.',
+    category: 'National Exam',
   },
 ];
 
@@ -501,18 +565,34 @@ function ProjectFeatureCard({ project, index }: { project: Project; index: numbe
             transform: hovered ? 'scale(1.06)' : 'scale(1)',
           }}
         >
-          <img
-            src={project.image}
-            alt={project.title}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-              padding: '12px',
-              filter: hovered ? 'brightness(1)' : 'brightness(0.75) grayscale(20%)',
-              transition: 'filter 0.5s ease',
-            }}
-          />
+          {project.image ? (
+            <img
+              src={project.image}
+              alt=""
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                padding: '12px',
+                filter: hovered ? 'brightness(1)' : 'brightness(0.75) grayscale(20%)',
+                transition: 'filter 0.5s ease',
+              }}
+            />
+          ) : (
+            <span
+              aria-hidden="true"
+              className="font-display font-800"
+              style={{
+                color: 'var(--fg)',
+                fontSize: project.monogram && project.monogram.length > 2 ? '1.25rem' : '2rem',
+                letterSpacing: '-0.04em',
+                opacity: hovered ? 1 : 0.72,
+                transition: 'opacity 0.4s ease',
+              }}
+            >
+              {project.monogram ?? project.title.slice(0, 2).toUpperCase()}
+            </span>
+          )}
         </div>
 
         {/* Title + subtitle */}
@@ -740,7 +820,7 @@ export default function ProjectsSection() {
       id="work"
       ref={sectionRef}
       className="pt-16 pb-28 md:pt-20 md:pb-40 px-8 md:px-12"
-      aria-label="Work Experience and Projects"
+      aria-label="Work Experience, Projects, and Achievements"
     >
       <div className="max-w-[1200px] mx-auto">
 
@@ -854,6 +934,111 @@ export default function ProjectsSection() {
           <div style={{ borderBottom: '1px solid var(--border)' }}>
             {projects.map((project, i) => (
               <ProjectFeatureCard key={project.id} project={project} index={i} />
+            ))}
+          </div>
+        </div>
+
+        {/* ── Achievements ─────────────────────────────────────────────── */}
+        <div className="mt-28 md:mt-40">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
+            <div>
+              <span
+                className="reveal-up block text-[10px] font-display font-600 uppercase tracking-[0.28em] mb-5"
+                style={{ color: 'var(--fg-muted)' }}
+              >
+                Achievements
+              </span>
+              <h2
+                className="reveal-up delay-100 font-display font-800"
+                style={{
+                  fontSize: 'clamp(2.2rem, 6vw, 4.5rem)',
+                  letterSpacing: '-0.04em',
+                  lineHeight: '0.95',
+                  color: 'var(--fg)',
+                }}
+              >
+                Recognition that
+                <br />
+                <span style={{ color: 'var(--fg-subtle)' }}>marks the journey.</span>
+              </h2>
+            </div>
+
+            <div
+              className="reveal-up delay-200 shrink-0 flex items-center gap-3 self-start sm:self-end"
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border)',
+                borderRadius: '100px',
+                padding: '10px 18px',
+              }}
+            >
+              <div className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--accent)' }} />
+              <span
+                className="text-[11px] font-display font-600 uppercase tracking-[0.16em]"
+                style={{ color: 'var(--fg-muted)' }}
+              >
+                {achievements.length} distinctions
+              </span>
+            </div>
+          </div>
+
+          <div style={{ borderBottom: '1px solid var(--border)' }}>
+            {achievements.map((achievement, i) => (
+              <article
+                key={achievement.id}
+                className="reveal-up group grid grid-cols-[32px_1fr] md:grid-cols-[48px_1fr_auto] gap-x-5 md:gap-x-8 items-start md:items-center py-7 md:py-8"
+                style={{
+                  borderTop: '1px solid var(--border)',
+                  transitionDelay: `${i * 0.08}s`,
+                }}
+              >
+                <span
+                  className="font-display text-[11px] font-600 tracking-[0.14em] pt-1 md:pt-0 transition-colors duration-300 group-hover:text-[var(--accent)]"
+                  style={{ color: 'var(--fg-subtle)' }}
+                >
+                  {achievement.index}
+                </span>
+
+                <div>
+                  <h3
+                    className="font-display font-700"
+                    style={{
+                      color: 'var(--fg)',
+                      fontSize: 'clamp(1rem, 2vw, 1.3rem)',
+                      letterSpacing: '-0.02em',
+                    }}
+                  >
+                    {achievement.title}
+                  </h3>
+                  <p
+                    className="font-body text-sm leading-relaxed mt-1.5 max-w-[680px]"
+                    style={{ color: 'var(--fg-muted)' }}
+                  >
+                    {achievement.detail}
+                  </p>
+                  <span
+                    className="md:hidden inline-block text-[9px] font-display font-600 uppercase tracking-[0.12em] px-3 py-1.5 rounded-full mt-4"
+                    style={{
+                      color: 'var(--fg-muted)',
+                      border: '1px solid var(--border)',
+                      background: 'var(--bg-card)',
+                    }}
+                  >
+                    {achievement.category}
+                  </span>
+                </div>
+
+                <span
+                  className="hidden md:inline-block text-[9px] font-display font-600 uppercase tracking-[0.12em] px-3 py-1.5 rounded-full"
+                  style={{
+                    color: 'var(--fg-muted)',
+                    border: '1px solid var(--border)',
+                    background: 'var(--bg-card)',
+                  }}
+                >
+                  {achievement.category}
+                </span>
+              </article>
             ))}
           </div>
         </div>
